@@ -13,7 +13,7 @@ def _():
 
 @app.cell
 def _(mo):
-    mo.md("""#Webassembly Chat App""")
+    mo.md("""# Webassembly Chat App""")
     return
 
 
