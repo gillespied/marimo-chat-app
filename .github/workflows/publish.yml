@@ -13,10 +13,10 @@ jobs:
             - name: Install uv and set the python version
               uses: astral-sh/setup-uv@v5
             - name: Install dependencies
-              run: uv sync --group docs
+              run: uv sync
             - name: 📄 Export notebook
               run: |
-                  marimo export html-wasm notebook.py -o path/to/output --mode run
+                  marimo export html-wasm chatapp.py -o path/to/output --mode run
 
             - name: 📦 Upload Pages Artifact
               uses: actions/upload-pages-artifact@v3
